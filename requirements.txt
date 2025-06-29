@@ -2,3 +2,4 @@ streamlit
 requests
 langchain_community
 langchain_groq
+protobuf==3.20.1
