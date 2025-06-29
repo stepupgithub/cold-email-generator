@@ -8,7 +8,7 @@ from utils import clean_text
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-
+import sqlite3
 def create_streamlit_app(llm, portfolio, clean_text):
     st.title("📧 Cold Mail Generator")
     url_input = st.text_input("Enter a URL:", value="https://careers.nike.com/senior-additional-demand-equipment-rep/job/R-64409")
